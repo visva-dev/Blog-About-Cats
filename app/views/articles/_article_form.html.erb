@@ -5,6 +5,8 @@
 <%= f.label :content %>
 <%= f.text_area :content %>
 
+<%= f.select :category_id, Category.all.map {|c| [c.category, c.id]} %>
+
 <%= f.submit %>
 
 <% end %>
