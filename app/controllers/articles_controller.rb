@@ -1,6 +1,14 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
+    @categories = Category.all
+
+    cate = params[:cate]
+
+    if !cate.nil?
+      @articles = Article.where(:category_id => cate)
+    else
+      @articles = Article.all
+    end
   end
 
   def show
