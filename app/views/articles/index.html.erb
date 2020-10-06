@@ -7,4 +7,5 @@
 <% end %>
 <% @categories.each do |category| %>
   <%= link_to category.category, articles_path(:cate => category.id) %>
+  <%= category.articles.count %>
 <% end %>
