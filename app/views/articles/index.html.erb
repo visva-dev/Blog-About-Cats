@@ -1,19 +1,20 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-8">
       <% @articles.each do |article| %>
         <div class="card mt-3">
+          <%= image_tag article.image unless article.image.nil? %>
           <div class="card-header">
             <h3><%= link_to article.title, article_path(article.id) %></h3>
           </div>
           <div class="card-body">
-            <h4><%= link_to article.content, article_path(article.id) %></h4>
+            <h4><%= article.content %></h4>
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
           </div>
         </div>
       <% end %>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-4">
       <div class="card mt-3">
         <div class="card-header">
           Categories
