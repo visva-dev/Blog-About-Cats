@@ -1,11 +1,36 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
-<% @articles.each do |article| %>
-  <h3><%= link_to article.title, article_path(article.id) %></h3>
-  <h4><%= link_to article.content, article_path(article.id) %></h4>
-  <%= link_to "View", article_path(article.id), class: 'btn btn-primary' %>
-<% end %>
-<% @categories.each do |category| %>
-  <%= link_to category.category, articles_path(:cate => category.id) %>
-  <%= category.articles.count %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <% @articles.each do |article| %>
+        <div class="card mt-3">
+          <div class="card-header">
+            <h3><%= link_to article.title, article_path(article.id) %></h3>
+          </div>
+          <div class="card-body">
+            <h4><%= link_to article.content, article_path(article.id) %></h4>
+            <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-2">
+      <div class="card mt-3">
+        <div class="card-header">
+          Categories
+        </div>
+        <div class="card-body">
+          <div class="list-group">
+            <% @categories.each do |category| %>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <%= link_to category.category, articles_path(:cate => category.id) %>
+                <span class="badge badge-primary badge-pill">
+                  <%= category.articles.count %>
+                </span>
+              </li>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

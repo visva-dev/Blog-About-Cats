@@ -1,8 +1,0 @@
-<div class="nav-scroller py-1 mb-2">
-  <% @categories.each do |category| %>
-    <nav class="nav d-flex justify-content-between">
-      <%= link_to category.category, articles_path(:cate => category.id), class: 'p-2 text-muted' %>
-      <%# <%= category.articles.count %>
-    <% end %>
-  </nav>
-</div>

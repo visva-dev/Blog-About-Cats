@@ -1,12 +1,21 @@
-<%= form_for @article do |f| %>
-
-<%= f.label :title %>
-<%= f.text_field :title %>
-<%= f.label :content %>
-<%= f.text_area :content %>
-
-<%= f.select :category_id, Category.all.map {|c| [c.category, c.id]} %>
-
-<%= f.submit %>
-
-<% end %>
+<div class="flex-row d-flex justify-content-center">
+  <div class="card mt-5">
+    <div class="card-body">
+      <%= form_for @article do |f| %>
+        <div class="form-group">
+          <%= f.label :title %>
+          <%= f.text_field :title, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :content %>
+          <%= f.text_area :content, class: "form-control" %>
+          <div class="form-group mt-2">
+            <%= f.select :category_id, Category.all.map {|c| [c.category, c.id]} %>
+          </div>
+          <%= f.submit "Submit", class: 'btn btn-outline-primary' %>
+          <%= link_to "Back", articles_path, class: 'btn btn-outline-secondary' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
