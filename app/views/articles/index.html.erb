@@ -10,6 +10,7 @@
           <div class="card-body">
             <h4><%= article.content %></h4>
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
+            <h6><%= article.created_at %> by <a href="#">Mark</a> <%= current_user.name if article.user %> </h6>
           </div>
         </div>
       <% end %>
