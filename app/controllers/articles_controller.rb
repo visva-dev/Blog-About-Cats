@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
     if !cate.nil?
       @articles = Article.where(:category_id => cate)
     else
-      @articles = Article.all
+      @articles = Article.order(created_at: :desc).includes(:user).limit(5)
     end
   end
 
