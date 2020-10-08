@@ -13,8 +13,12 @@
             <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name if article.user %> </h6>
           </div>
           <%= like_or_dislike_btn(article) %>
+          <%= article.likes.count %>
         </div>
       <% end %>
+      <%# <% @articles.each do |article| %>
+        <%# <%= article.likes.count.order('max(likes) DESC') %>
+      <%# <% end %> 
     </div>
     <div class="col-md-4">
       <div class="card mt-3">
