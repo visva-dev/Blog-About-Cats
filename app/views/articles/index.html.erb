@@ -10,8 +10,9 @@
           <div class="card-body">
             <h4><%= article.content %></h4>
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
-            <h6><%= article.created_at %> by <%= article.user.email if article.user %> </h6>
+            <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name if article.user %> </h6>
           </div>
+          <%= like_or_dislike_btn(article) %>
         </div>
       <% end %>
     </div>
@@ -30,6 +31,7 @@
                 </span>
               </li>
             <% end %>
+            <%= link_to "Create Category", new_category_path %>
           </div>
         </div>
       </div>
