@@ -17,28 +17,28 @@
         </div>
       <% end %>
       <%# <% @articles.each do |article| %>
-        <%# <%= article.likes.count.order('max(likes) DESC') %>
-      <%# <% end %> 
-    </div>
-    <div class="col-md-4">
-      <div class="card mt-3">
-        <div class="card-header">
-          Categories
-        </div>
-        <div class="card-body">
-          <div class="list-group">
-            <% @categories.each do |category| %>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <%= link_to category.category, articles_path(:cate => category.id) %>
-                <span class="badge badge-primary badge-pill">
-                  <%= category.articles.count %>
-                </span>
-              </li>
-            <% end %>
-            <%= link_to "Create Category", new_category_path %>
+        <%# <%= article.likes.count  %>
+        <%# <% end %>
+      </div>
+      <div class="col-md-4">
+        <div class="card mt-3">
+          <div class="card-header">
+            Categories
+          </div>
+          <div class="card-body">
+            <div class="list-group">
+              <% @categories.each do |category| %>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <%= link_to category.category, articles_path(:cate => category.id) %>
+                  <span class="badge badge-primary badge-pill">
+                    <%= category.articles.count %>
+                  </span>
+                </li>
+              <% end %>
+              <%= link_to "Create Category", new_category_path %>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>

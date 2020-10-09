@@ -51,6 +51,11 @@ class ArticlesController < ApplicationController
     redirect_to :action => :index
   end
 
+  def feature_articles
+    @articles = Article.likes.count.order('created_at DESC')
+  end
+  
+
   private
 
   def article_params
