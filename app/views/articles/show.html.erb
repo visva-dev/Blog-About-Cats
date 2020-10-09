@@ -1,8 +1,10 @@
-<div class="container-fluid mt-3">
+<div class="container mt-3">
   <h1>Category: <%= @article.category.category %></h1>
   <h3><%= @article.title %></h3>
   <p><%= @article.content %></p>
-  <%= link_to "Edit", edit_article_path(@article.id), class: 'btn btn-primary' %>
-  <%= link_to "Delete", article_path(@article.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  <% if user_signed_in? %>
+    <%= link_to "Edit", edit_article_path(@article.id), class: 'btn btn-primary' %>
+    <%= link_to "Delete", article_path(@article.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  <% end %>
   <%= link_to "Back", articles_path, class: 'btn btn-secondary' %>
 </div>

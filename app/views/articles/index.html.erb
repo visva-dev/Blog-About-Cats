@@ -12,34 +12,16 @@
       </div>
     <% end %>
   </div>
-  <div class="row mb-2">
+  <div class="card-group mt-2">
     <% @categories.each do |category| %>
-      <div class="col-md-6 mt-2">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success"><%= category.category %></strong>
-            <h3 class="mb-0"><%= category.articles.last.title %></h3>
-            <div class="mb-1 text-muted"><%= category.articles.last.created_at.strftime("%Y/%m/%d") %></div>
-            <p class="mb-auto">
-            <p class="card-text"><%= truncate(category.articles.last.content, length: 100) %></p>
-            <%= link_to 'Read more', article_path(category.articles.last), class: 'stretched-link' %>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg
-                class="bd-placeholder-img"
-                width="200"
-                height="250"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-                role="img"
-                aria-label="Placeholder: Thumbnail"
-              >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c" />
-              <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-            </svg>
-          </div>
+      <div class="card">
+        <%= image_tag category.articles.last.image, class: "card-img-top" %>
+        <div class="card-body">
+          <h5 class="card-title"><%= category.articles.last.title %></h5>
+          <p class="card-text"><%= truncate(category.articles.last.content, length: 100) %></p>
+          <p class="card-text"><small class="text-muted"><%= category.articles.last.created_at.strftime("%Y/%m/%d") %> </small></p>
+          <strong class="d-inline-block mb-2 text-success"><%= category.category %></strong>
+          <p><%= link_to 'Read more', article_path(category.articles.last), class: 'btn btn-primary' %></p>
         </div>
       </div>
     <% end %>
@@ -57,31 +39,35 @@
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
             <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name if article.user %> </h6>
           </div>
-          <%= like_or_dislike_btn(article) %>
-          <%= article.likes.count %>
+          <% if user_signed_in? %>
+            <%= like_or_dislike_btn(article) %>
+            <%= article.likes.count %>
+          <% end %>
         </div>
       <% end %>
-      </div>
-      <div class="col-md-4">
-        <div class="card mt-3">
-          <div class="card-header">
-            Categories
-          </div>
-          <div class="card-body">
-            <div class="list-group">
-              <% @categories.each do |category| %>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <%= link_to category.category, articles_path(:cate => category.id) %>
-                  <span class="badge badge-primary badge-pill">
-                    <%= category.articles.count %>
-                  </span>
-                </li>
-              <% end %>
+    </div>
+    <div class="col-md-4">
+      <div class="card mt-3">
+        <div class="card-header">
+          Categories
+        </div>
+        <div class="card-body">
+          <div class="list-group">
+            <% @categories.each do |category| %>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <%= link_to category.category, articles_path(:cate => category.id) %>
+                <span class="badge badge-primary badge-pill">
+                  <%= category.articles.count %>
+                </span>
+              </li>
+            <% end %>
+            <% if user_signed_in? %>
               <%= link_to "Create Category", new_category_path %>
-            </div>
+            <% end %>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
