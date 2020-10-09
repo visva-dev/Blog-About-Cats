@@ -1,4 +1,49 @@
 <div class="container">
+  <div class="card bg-dark mt-2">
+    <% popular = Like.popular %>
+    <% popular.each do |vote| %>
+      <%= image_tag vote.article.image, class: "card-img ", :size => '100%xauto' %>
+      <div class="card-img-overlay font-weight-bold">
+        <h5 class="card-title font-weight-bold"><%= vote.article.title %></h5>
+        <p class="card-text"><%= truncate(vote.article.content, length: 250) %></p>
+        <p class="lead mb-0">
+          <%= link_to 'Read more', article_path(vote.article), class: 'text-dark' %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+  <div class="row mb-2">
+    <% @categories.each do |category| %>
+      <div class="col-md-6 mt-2">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"><%= category.category %></strong>
+            <h3 class="mb-0"><%= category.articles.last.title %></h3>
+            <div class="mb-1 text-muted"><%= category.articles.last.created_at.strftime("%Y/%m/%d") %></div>
+            <p class="mb-auto">
+            <p class="card-text"><%= truncate(category.articles.last.content, length: 100) %></p>
+            <%= link_to 'Read more', article_path(category.articles.last), class: 'stretched-link' %>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <svg
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+              >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
   <div class="row">
     <div class="col-md-8">
       <% @articles.each do |article| %>
@@ -8,7 +53,7 @@
             <h3><%= link_to article.title, article_path(article.id) %></h3>
           </div>
           <div class="card-body">
-            <h4><%= article.content %></h4>
+            <h4><%= truncate(article.content, length: 350) %></h4>
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
             <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name if article.user %> </h6>
           </div>
@@ -16,9 +61,6 @@
           <%= article.likes.count %>
         </div>
       <% end %>
-      <%# <% @articles.each do |article| %>
-        <%# <%= article.likes.count  %>
-        <%# <% end %>
       </div>
       <div class="col-md-4">
         <div class="card mt-3">
@@ -42,3 +84,4 @@
       </div>
     </div>
   </div>
+</div>
