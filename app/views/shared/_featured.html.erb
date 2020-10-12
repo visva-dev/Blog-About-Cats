@@ -1,4 +1,3 @@
-  
 <div class="card bg-dark mt-2">
   <% popular = Like.popular %>
   <% popular.each do |vote| %>
@@ -20,6 +19,7 @@
         <h5 class="card-title"><%= category.articles.last.title unless category.articles.last.nil? %></h5>
         <p class="card-text"><%= truncate(category.articles.last.content, length: 100) unless category.articles.last.nil? %></p>
         <p class="card-text"><small class="text-muted"><%= category.articles.last.created_at.strftime("%Y/%m/%d") unless category.articles.last.nil?%></small></p>
+        <p> <strong class="d-inline-block mb-2 text-success"><%= category.category %></strong></p>
         <%= link_to 'Read more', article_path(category.articles.last), class: 'btn btn-primary' unless category.articles.last.nil? %>
       </div>
     </div>

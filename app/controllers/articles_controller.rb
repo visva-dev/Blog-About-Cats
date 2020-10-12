@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
     if !cate.nil?
       @articles = Article.where(:category_id => cate)
     else
-      @articles = Article.order(created_at: :desc).includes(:user)
+      @articles = Article.order(created_at: :desc).includes(:user).paginate(page: params[:page], per_page: 3)
     end
   end
 

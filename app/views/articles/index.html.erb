@@ -17,6 +17,12 @@
           <%= article.likes.count %>
         </div>
       <% end %>
+      <div class="digg_pagination">
+        <div class="page_info">
+          <%= page_entries_info @articles %>
+        </div>
+        <%= will_paginate @articles, :container => false %>
+      </div>
     </div>
     <div class="col-md-4">
       <div class="card mt-3">
