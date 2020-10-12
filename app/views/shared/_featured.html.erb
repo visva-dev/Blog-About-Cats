@@ -1,0 +1,27 @@
+  
+<div class="card bg-dark mt-2">
+  <% popular = Like.popular %>
+  <% popular.each do |vote| %>
+    <%= image_tag vote.article.image, class: "card-img ", :size => '100%xauto' %>
+    <div class="card-img-overlay font-weight-bold">
+      <h5 class="card-title font-weight-bold"><%= vote.article.title %></h5>
+      <p class="card-text"><%= truncate(vote.article.content, length: 250) %></p>
+      <p class="lead mb-0">
+        <%= link_to 'Read more', article_path(vote.article), class: 'text-dark' %>
+      </p>
+    </div>
+  <% end %>
+</div>
+<div class="card-group">
+  <% @categories.limit(3).each do |category| %>
+    <div class="card">
+      <%= image_tag category.articles.last.image, class: "card-img-top" unless category.articles.last.nil? %>
+      <div class="card-body">
+        <h5 class="card-title"><%= category.articles.last.title unless category.articles.last.nil? %></h5>
+        <p class="card-text"><%= truncate(category.articles.last.content, length: 100) unless category.articles.last.nil? %></p>
+        <p class="card-text"><small class="text-muted"><%= category.articles.last.created_at.strftime("%Y/%m/%d") unless category.articles.last.nil?%></small></p>
+        <%= link_to 'Read more', article_path(category.articles.last), class: 'btn btn-primary' unless category.articles.last.nil? %>
+      </div>
+    </div>
+  <% end %>
+</div>

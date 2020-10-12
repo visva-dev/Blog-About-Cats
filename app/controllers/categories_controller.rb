@@ -1,5 +1,8 @@
 class CategoriesController < ApplicationController
+  before_action :set_category, only: [:update, :destroy, :edit]
   before_action :authenticate_user!, except: [:index, :show]
+
+  
 
   # GET /categories
   # GET /categories.json
@@ -10,7 +13,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @categories = Category.all
+    @category = Category.find(params[:id])
   end
 
   # GET /categories/new

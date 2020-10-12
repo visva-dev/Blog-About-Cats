@@ -3,15 +3,6 @@ class ArticlesController < ApplicationController
   
   def index
     @categories = Category.all
-    @articles = []
-    @categories.each do |category|
-      category.articles.each do |article|
-        @articles << article
-      end
-    end
-    @article = @articles.last
-
-
     cate = params[:cate]
     if !cate.nil?
       @articles = Article.where(:category_id => cate)

@@ -1,29 +1,5 @@
 <div class="container">
-  <div class="card bg-dark mt-2">
-    <% popular = Like.popular %>
-    <% popular.each do |vote| %>
-      <%= image_tag vote.article.image, class: "card-img ", :size => '100%xauto' %>
-      <div class="card-img-overlay font-weight-bold">
-        <h5 class="card-title font-weight-bold"><%= vote.article.title %></h5>
-        <p class="card-text"><%= truncate(vote.article.content, length: 250) %></p>
-        <p class="lead mb-0">
-          <%= link_to 'Read more', article_path(vote.article), class: 'text-dark' %>
-        </p>
-      </div>
-    <% end %>
-  </div>
-  <div class="card-group mt-2">
-      <div class="card">
-        <%= image_tag @article.image, class: "card-img-top" %>
-        <div class="card-body">
-          <h5 class="card-title"><%= @article.title %></h5>
-          <p class="card-text"><%= truncate(@article.content, length: 100) %></p>
-          <p class="card-text"><small class="text-muted"><%= @article.created_at.strftime("%Y/%m/%d") %> </small></p>
-          <strong class="d-inline-block mb-2 text-success"><%= @article.category %></strong>
-          <p><%= link_to 'Read more', article_path(@article), class: 'btn btn-primary' %></p>
-        </div>
-      </div>
-  </div>
+  <%= render 'shared/featured'%>
   <div class="row">
     <div class="col-md-8">
       <% @articles.each do |article| %>
@@ -37,10 +13,8 @@
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
             <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name if article.user %> </h6>
           </div>
-          <% if user_signed_in? %>
-            <%= like_or_dislike_btn(article) %>
-            <%= article.likes.count %>
-          <% end %>
+          <%= like_or_dislike_btn(article) %>
+          <%= article.likes.count %>
         </div>
       <% end %>
     </div>
@@ -59,12 +33,11 @@
                 </span>
               </li>
             <% end %>
-            <% if user_signed_in? %>
-              <%= link_to "Create Category", new_category_path %>
-            <% end %>
+            <%= link_to "Create Category", new_category_path %>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>
