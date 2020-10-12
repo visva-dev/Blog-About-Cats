@@ -3,14 +3,20 @@ class ArticlesController < ApplicationController
   
   def index
     @categories = Category.all
+    @articles = []
+    @categories.each do |category|
+      category.articles.each do |article|
+        @articles << article
+      end
+    end
+    @article = @articles.last
+
 
     cate = params[:cate]
-
     if !cate.nil?
       @articles = Article.where(:category_id => cate)
     else
       @articles = Article.order(created_at: :desc).includes(:user)
-      @articles = Article.page(params[:page]).per(3)
     end
   end
 

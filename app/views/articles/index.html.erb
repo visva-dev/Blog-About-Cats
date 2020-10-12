@@ -13,18 +13,16 @@
     <% end %>
   </div>
   <div class="card-group mt-2">
-    <% @categories.each do |category| %>
       <div class="card">
-        <%= image_tag category.articles.last.image, class: "card-img-top" %>
+        <%= image_tag @article.image, class: "card-img-top" %>
         <div class="card-body">
-          <h5 class="card-title"><%= category.articles.last.title %></h5>
-          <p class="card-text"><%= truncate(category.articles.last.content, length: 100) %></p>
-          <p class="card-text"><small class="text-muted"><%= category.articles.last.created_at.strftime("%Y/%m/%d") %> </small></p>
-          <strong class="d-inline-block mb-2 text-success"><%= category.category %></strong>
-          <p><%= link_to 'Read more', article_path(category.articles.last), class: 'btn btn-primary' %></p>
+          <h5 class="card-title"><%= @article.title %></h5>
+          <p class="card-text"><%= truncate(@article.content, length: 100) %></p>
+          <p class="card-text"><small class="text-muted"><%= @article.created_at.strftime("%Y/%m/%d") %> </small></p>
+          <strong class="d-inline-block mb-2 text-success"><%= @article.category %></strong>
+          <p><%= link_to 'Read more', article_path(@article), class: 'btn btn-primary' %></p>
         </div>
       </div>
-    <% end %>
   </div>
   <div class="row">
     <div class="col-md-8">
@@ -45,7 +43,6 @@
           <% end %>
         </div>
       <% end %>
-      <%= paginate @articles %>
     </div>
     <div class="col-md-4">
       <div class="card mt-3">
