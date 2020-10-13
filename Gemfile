@@ -56,15 +56,13 @@ group :production do
   gem 'pg'
 end
 
-group :assets do
-  gem 'therubyracer'
-  gem 'sass-rails', '>= 6'
-  gem 'coffee-rails'
-  gem 'uglifier'
-end
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'bullet'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'will_paginate', '~> 3.1.0'
+gem 'therubyracer'
+gem 'sass-rails', '>= 6'
+gem 'coffee-rails'
+gem 'uglifier'
+gem 'yui-compressor', '~> 0.12.0'

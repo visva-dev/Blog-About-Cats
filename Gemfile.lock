@@ -244,6 +244,7 @@ GEM
     will_paginate (3.1.8)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yui-compressor (0.12.0)
     zeitwerk (2.4.0)
 
 PLATFORMS
@@ -275,6 +276,7 @@ DEPENDENCIES
   webdrivers
   webpacker (~> 4.0)
   will_paginate (~> 3.1.0)
+  yui-compressor (~> 0.12.0)
 
 RUBY VERSION
    ruby 2.7.0p0
