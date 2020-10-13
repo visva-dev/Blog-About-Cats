@@ -1,6 +1,9 @@
 # Microverse Capstone Project - Blog app
 Microverse Ruby on Rails capstone project. This project is a blogging app, where users can register, start writing their own articles, read articles written by others, and give likes to those articles.
 
+![screenshot](./public/assets/images/image1.png)
+![screenshot](./public/assets/images/image2.png)
+
 ## Built With
 - Ruby 2.7.0
 - Ruby on Rails 6.0.3.4

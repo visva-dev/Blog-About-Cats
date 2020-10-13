@@ -27,8 +27,6 @@ Metrics/BlockLength:
   ExcludedMethods: ['describe']
   Max: 30
 
-Style/Documentation:
-  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/EachForSimpleLoop:
@@ -57,4 +55,5 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-
+Style/Documentation:
+    Enabled: false

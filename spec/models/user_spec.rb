@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
   subject do
     described_class.new(
-      email: "test@test.com",
+      email: 'test@test.com',
       name: 'user1',
       password: '123456'
     )
