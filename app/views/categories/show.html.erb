@@ -1,9 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @category.category %>
-</p>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<div class="flex-row d-flex justify-content-center">
+  <div class="card mt-5">
+    <div class="card-body">
+      <p id="notice"><%= notice %></p>
+      <p>
+        <strong>Category:</strong>
+        <%= @category.category %>
+      </p>
+      <%= link_to 'Edit', edit_category_path(@category) %> |
+      <%= link_to 'Back', categories_path %>
+    </div>
+  </div>
+</div>

@@ -12,9 +12,11 @@
             <h4><%= truncate(article.content, length: 350) %></h4>
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
             <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name if article.user %> </h6>
+            <% if user_signed_in? %>
+              <%= like_or_dislike_btn(article) %>
+            <% end %>
+            <h6><%= article.likes.count %> likes!</h6>
           </div>
-          <%= like_or_dislike_btn(article) %>
-          <%= article.likes.count %>
         </div>
       <% end %>
       <div class="digg_pagination">
@@ -39,7 +41,10 @@
                 </span>
               </li>
             <% end %>
-            <%= link_to "Create Category", new_category_path %>
+            <% if user_signed_in? %>
+              <%= link_to "Create Category", new_category_path, class: 'btn btn-outline-primary' %>
+            <% end %>
+            <%= link_to "All Categories", categories_path, class: 'btn btn-outline-primary mt-1' %>
           </div>
         </div>
       </div>
