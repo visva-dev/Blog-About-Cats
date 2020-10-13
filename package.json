@@ -1,5 +1,5 @@
 {
-  "name": "Students_Blog",
+  "name": "students_blog",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -14,5 +14,24 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "description": "Microverse Ruby on Rails capstone project. This project is a blogging app, where users can register, start writing their own articles, read articles written by others, and give likes to those articles.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visva-dev/Students-Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/visva-dev/Students-Blog/issues"
+  },
+  "homepage": "https://github.com/visva-dev/Students-Blog#readme"
 }
