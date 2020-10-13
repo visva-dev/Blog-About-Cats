@@ -4,10 +4,10 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
-
+gem 'sqlite3', group: :development
+gem 'pg', '0.18.4', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
-# Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  gem 'pg', '~> 0.18.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 4.0.1'
@@ -52,10 +51,6 @@ group :test do
   gem 'webdrivers'
 end
 
-group :production do
-  gem 'pg', '~> 0.18.4'
-end
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'bullet'
 gem 'devise', '~> 4.7', '>= 4.7.3'
@@ -66,3 +61,4 @@ gem 'sass-rails', '>= 6'
 gem 'coffee-rails'
 gem 'uglifier'
 gem 'yui-compressor', '~> 0.12.0'
+gem 'rails_12factor', group: :production
