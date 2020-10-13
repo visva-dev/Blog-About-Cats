@@ -1,24 +1,72 @@
-# README
+# Microverse Capstone Project - Blog app
+Microverse Ruby on Rails capstone project. This project is a blogging app, where users can register, start writing their own articles, read articles written by others, and give likes to those articles.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
+- Ruby 2.7.0
+- Ruby on Rails 6.0.3.4
 
-Things you may want to cover:
+## Demo Video
 
-* Ruby version
+Click the following [link](https://www.loom.com/share/377fc1646c154ef1b7b01b2bb6d3405e) to see Video presentation of the project.
 
-* System dependencies
+## Live Link
 
-* Configuration
+Click the following [link](https://www.loom.com/share/377fc1646c154ef1b7b01b2bb6d3405e) to see Video presentation of the project.
 
-* Database creation
+#### To get this project on your local machine, follow these steps:
+1. To get this project up and running locally, you should have [Ruby](https://www.ruby-lang.org/en/) installed on your computer.
 
-* Database initialization
+2. Run this command `git clone git@github.com:visva-dev/Students-Blog.git` in the desired folder to clone the repository on to your local machine.
+After cloning the project, you should move into the directory where the project is stored, example `cd Students-Blog`.
 
-* How to run the test suite
+3. Then run to following command install the necessary dependencies
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+    bundle install
+```
 
-* Deployment instructions
+4. Step 4
 
-* ...
+```bash
+    rails db:create
+```
+
+5. Step 5
+
+```bash
+    rails db:migrate
+```
+
+6. Step 6 (Sometimes doesn't need to run this, but if it asking in the terminal, then run it)
+
+```bash
+    yarn install --check files 
+```
+
+7. Step 7
+
+```bash
+    Rails s
+```
+
+## Authors
+
+👤 **Visvaldas Rapalis**
+
+- Github: [@visva-dev](https://github.com/visva-dev)
+- Twitter: [@Visva_Dev](https://twitter.com/Visva_Dev)
+- Linkedin: [@Visvaldas-Rapalis](https://www.linkedin.com/in/visvaldas-rapalis/)
+- Website: [good-developer.com](https://good-developer.com)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- This project was originally taken from [The Odin project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails).
+- The project was inspired by the [Microverse](https://www.microverse.org/) program.
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.

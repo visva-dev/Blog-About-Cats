@@ -3,8 +3,8 @@
   <% popular.each do |vote| %>
     <%= image_tag vote.article.image, class: "card-img ", :size => '100%xauto' %>
     <div class="card-img-overlay font-weight-bold">
-      <h5 class="card-title font-weight-bold"><%= vote.article.title %></h5>
-      <p class="card-text"><%= truncate(vote.article.content, length: 250) %></p>
+      <h5 class="card-title font-weight-bold text-warning"><%= vote.article.title %></h5>
+      <p class="card-text text-light bg-dark"><%= truncate(vote.article.content, length: 250) %></p>
       <p class="lead mb-0">
         <%= link_to 'Read more', article_path(vote.article), class: 'text-dark' %>
       </p>
