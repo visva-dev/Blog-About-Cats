@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.4'
+  gem 'pg', '~> 0.18.4'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails', '~> 4.0.1'
@@ -53,7 +53,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.18.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
