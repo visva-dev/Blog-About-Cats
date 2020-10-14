@@ -122,7 +122,7 @@ GEM
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
-    pg (0.18.4)
+    pg (1.2.3)
     public_suffix (4.0.6)
     puma (4.3.6)
       nio4r (~> 2.0)
@@ -213,7 +213,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
@@ -264,7 +263,7 @@ DEPENDENCIES
   devise (~> 4.7, >= 4.7.3)
   jbuilder (~> 2.7)
   listen (~> 3.2)
-  pg (= 0.18.4)
+  pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.3)
   rails_12factor
@@ -273,7 +272,6 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
   therubyracer
   turbolinks (~> 5)
   tzinfo-data
