@@ -28,6 +28,6 @@ test:
 
 production:
   <<: *default
-  database: capstone_production
+  database: <%= ENV['DATABASE_URL'] %>
   username: postgres
   password: postgres
