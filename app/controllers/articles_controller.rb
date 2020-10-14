@@ -4,11 +4,11 @@ class ArticlesController < ApplicationController
   def index
     @categories = Category.all
     cate = params[:cate]
-    if !cate.nil?
-      @articles = Article.where(category_id: cate).includes([:user]).paginate(page: params[:page], per_page: 3)
+    @articles = if !cate.nil?
+      Article.where(category_id: cate).includes([:user]).paginate(page: params[:page], per_page: 3)
     else
       @articles = Article.order(created_at: :desc).includes(:user)
-                  .includes([:user]).paginate(page: params[:page], per_page: 3)
+          .includes([:user]).paginate(page: params[:page], per_page: 3)
     end
   end
 
