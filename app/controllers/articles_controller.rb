@@ -8,8 +8,8 @@ class ArticlesController < ApplicationController
                   Article.where(category_id: cate).includes([:user]).paginate(page: params[:page], per_page: 3)
                 else
                   @articles = Article.order(created_at: :desc).includes(:user)
-                                     .includes([:user]).paginate(page: params[:page], per_page: 3)
-    end
+                            .includes([:user]).paginate(page: params[:page], per_page: 3)
+                end
   end
 
   def show
