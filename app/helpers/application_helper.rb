@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module ApplicationHelper
   def like_or_dislike_btn(article)
     like = Like.find_by(article: article, user: current_user)
