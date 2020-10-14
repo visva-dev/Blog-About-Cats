@@ -10,11 +10,14 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 
 ## Demo Video
 
-Click the following [link](https://www.loom.com/share/377fc1646c154ef1b7b01b2bb6d3405e) to see Video presentation of the project.
+Click the following [link](https://www.loom.com/share/a6f4c7ca3b2a4acea1261b766476a7c9) to see Video presentation of the project.
 
 ## Live Link
 
-Click the following [link](https://www.loom.com/share/377fc1646c154ef1b7b01b2bb6d3405e) to see Video presentation of the project.
+Click the following [link](https://blogaboutcats.herokuapp.com/) live version of the site.
+To check website functionality you can use TestUser which is already created:
+`email: test2@test.com`
+`password: asdfasdf`
 
 #### To get this project on your local machine, follow these steps:
 1. To get this project up and running locally, you should have [Ruby](https://www.ruby-lang.org/en/) installed on your computer.
