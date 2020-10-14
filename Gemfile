@@ -53,6 +53,7 @@ gem 'bullet'
 gem 'coffee-rails'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'rails_12factor', group: :production
+gem 'rubocop', '~>0.81.0'
 gem 'sass-rails', '>= 6'
 gem 'therubyracer'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
