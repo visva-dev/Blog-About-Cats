@@ -16,6 +16,7 @@
     "dist/**",
     "**/reset*.css",
     "**/bootstrap*.css",
-    "public/**"
+    "public/**",
+    "node_modules**"
   ]
 }
