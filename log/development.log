@@ -40988,3 +40988,200 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 125ms (Views: 111.3ms | ActiveRecord: 12.0ms | Allocations: 41357)
 
 
+Started GET "/" for 127.0.0.1 at 2020-10-14 15:12:27 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mLike Load (1.1ms)[0m  [1m[34mSELECT article_id, count(article_id)
+    as count FROM "likes" GROUP BY "likes"."article_id" ORDER BY count desc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:3
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:4
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/views/shared/_featured.html.erb:15
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  [1m[36mCACHE Article Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  Rendered shared/_featured.html.erb (Duration: 113.3ms | Allocations: 43096)
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/articles/index.html.erb:5
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 10]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 9]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 8]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 7]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 5]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 3]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 2]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/index.html.erb:36
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/articles/index.html.erb:40
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/articles/index.html.erb:40
+  Rendered articles/index.html.erb within layouts/application (Duration: 189.5ms | Allocations: 65897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.erb (Duration: 0.9ms | Allocations: 399)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 86)
+Completed 200 OK in 237ms (Views: 190.8ms | ActiveRecord: 27.0ms | Allocations: 81465)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-14 15:13:08 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mLike Load (0.5ms)[0m  [1m[34mSELECT article_id, count(article_id)
+    as count FROM "likes" GROUP BY "likes"."article_id" ORDER BY count desc LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:3
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:4
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" LIMIT $1[0m  [["LIMIT", 3]]
+  ↳ app/views/shared/_featured.html.erb:15
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:17
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:19
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:20
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:21
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:22
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."category_id" = $1 ORDER BY "articles"."id" DESC LIMIT $2[0m  [["category_id", 2], ["LIMIT", 1]]
+  ↳ app/views/shared/_featured.html.erb:24
+  Rendered shared/_featured.html.erb (Duration: 116.0ms | Allocations: 41015)
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/articles/index.html.erb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 10]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 9]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."article_id" = $1[0m  [["article_id", 8]]
+  ↳ app/views/articles/index.html.erb:18
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ app/views/articles/index.html.erb:24
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:24
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/articles/index.html.erb:36
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 1]]
+  ↳ app/views/articles/index.html.erb:40
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."category_id" = $1[0m  [["category_id", 2]]
+  ↳ app/views/articles/index.html.erb:40
+  Rendered articles/index.html.erb within layouts/application (Duration: 153.6ms | Allocations: 54279)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 170ms (Views: 147.0ms | ActiveRecord: 18.1ms | Allocations: 60958)
+
+
