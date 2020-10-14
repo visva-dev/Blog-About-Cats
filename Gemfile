@@ -52,12 +52,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'bullet'
-gem 'devise', '~> 4.7', '>= 4.7.3'
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'will_paginate', '~> 3.1.0'
-gem 'therubyracer'
-gem 'sass-rails', '>= 6'
 gem 'coffee-rails'
-gem 'uglifier'
-gem 'yui-compressor', '~> 0.12.0'
+gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'rails_12factor', group: :production
+gem 'sass-rails', '>= 6'
+gem 'therubyracer'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'uglifier'
+gem 'will_paginate', '~> 3.1.0'
+gem 'yui-compressor', '~> 0.12.0'
