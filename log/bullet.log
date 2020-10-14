@@ -16,3 +16,30 @@ Call stack
   /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__2771256657976267877_46240'
   /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__2771256657976267877_46240'
 
+2020-10-14 15:26:45[WARN] user: visvaldas
+GET /
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__1568589509088563372_26100'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__1568589509088563372_26100'
+
+2020-10-14 15:27:11[WARN] user: visvaldas
+GET /
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__1568589509088563372_26100'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__1568589509088563372_26100'
+
+2020-10-14 15:27:17[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__1568589509088563372_26100'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__1568589509088563372_26100'
+
