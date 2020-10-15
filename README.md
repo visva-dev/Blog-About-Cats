@@ -8,7 +8,7 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 - When loged in users can like articles.
 - Featured article is showed at the top which is the most liked article.
 - Two bottom featured images are picked last ones from two different categories.
-- Data when an article created on who created it is showed on the article on the main page.
+- Data when article is created and who created it is showed on the article on the main page.
 - When user clicks on specific category it sorts articles just by that category
 - In categories right side field users can see how many articles each category has.
 
@@ -26,7 +26,7 @@ Click the following [Video presentation link](https://www.loom.com/share/a6f4c7c
 
 ## Live Demo
 
-Click the following [link](https://blogaboutcats.herokuapp.com/) live version of the site.
+Click the following [link](https://blogaboutcats.herokuapp.com/) to see live version of the site.
 To check website functionality you can use TestUser which is already created:
 `email: test2@test.com`
 `password: asdfasdf`
@@ -34,7 +34,7 @@ To check website functionality you can use TestUser which is already created:
 #### To get this project on your local machine, follow these steps:
 1. To get this project up and running locally, you should have [Ruby](https://www.ruby-lang.org/en/) installed on your computer.
 
-2. Run this command `git clone git@github.com:visva-dev/Students-Blog.git` in the desired folder to clone the repository on to your local machine.
+2. Run this command `git clone https://github.com/visva-dev/Students-Blog.git` in the desired folder to clone the repository on to your local machine.
 After cloning the project, you should move into the directory where the project is stored, example `cd Students-Blog`.
 
 3. Then run to following command install the necessary dependencies

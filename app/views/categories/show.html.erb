@@ -6,9 +6,9 @@
         <strong>Category:</strong>
         <%= @category.category %>
       </p>
-      <%= link_to 'Edit', edit_category_path(@category) %> |
-      <%= link_to 'Destroy', @category, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <%= link_to 'Back', categories_path %>
+      <td><%= link_to 'Edit', edit_category_path(@category), class: 'btn btn-outline-secondary' %></td>
+      <td><%= link_to 'Destroy', @category, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger' %></td>
+      <%= link_to 'Back', categories_path, class: 'btn btn-outline-secondary' %>
     </div>
   </div>
 </div>

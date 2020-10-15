@@ -14,16 +14,16 @@
           <% @categories.each do |category| %>
             <tr>
               <td><%= category.category %></td>
-              <td><%= link_to 'Show', category %></td>
-                <td><%= link_to 'Edit', edit_category_path(category) %></td>
-                <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Show', category, class: 'btn btn-primary' %></td>
+                <td><%= link_to 'Edit', edit_category_path(category), class: 'btn btn-outline-secondary' %></td>
+                <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-outline-danger' %></td>
             </tr>
           <% end %>
         </tbody>
       </table>
       <br>
-        <%= link_to 'New Category', new_category_path %>
-        <%= link_to 'Back', categories_path %>
+        <%= link_to 'New Category', new_category_path, class: 'btn btn-primary' %>
+        <%= link_to 'Back', root_path, class: 'btn btn-outline-secondary' %>
     </div>
   </div>
 </div>

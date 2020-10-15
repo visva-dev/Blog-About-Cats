@@ -12,8 +12,16 @@
             <h4><%= truncate(article.content, length: 350) %></h4>
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
             <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name %> </h6>
-            <%= like_or_dislike_btn(article) %>
-            <h6><%= article.likes.count %> likes!</h6>
+            <div class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="btn btn-outline-success">
+                  <%= like_or_dislike_btn(article) %>
+                </div>
+                <span class="badge badge-primary badge-pill">
+                  <%= article.likes.count %> likes!
+                </span>
+              </li>
+            </div>
           </div>
         </div>
       <% end %>
