@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: %i[update destroy edit]
+  before_action :set_category, only: %i[show update destroy edit]
   before_action :authenticate_user!, except: %i[index show]
-  before_action :require_same_user, only: [:edit, :update, :destroy]
+  before_action :require_same_user, only: %i[edit update destroy]
 
   # GET /categories
   # GET /categories.json
@@ -11,9 +11,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1
   # GET /categories/1.json
-  def show
-    @category = Category.find(params[:id])
-  end
+  def show; end
 
   # GET /categories/new
   def new
