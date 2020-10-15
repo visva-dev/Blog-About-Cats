@@ -1,4 +1,5 @@
 class LikesController < ApplicationController
+  before_action :authenticate_user!, except: %i[index show]
   def create
     @like = current_user.likes.new(article_id: params[:article_id])
     if @like.save
