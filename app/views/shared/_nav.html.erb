@@ -6,9 +6,6 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Account <span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item">
           <%= link_to "Write article", new_article_path, class: 'nav-link' %>
         </li>

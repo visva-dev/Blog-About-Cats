@@ -1,11 +1,12 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: %i[update destroy edit]
   before_action :authenticate_user!, except: %i[index show]
+  before_action :require_same_user, only: [:edit, :update, :destroy]
 
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all.paginate(page: params[:page], per_page: 30)
+    @categories = Category.all.paginate(page: params[:page], per_page: 3)
   end
 
   # GET /categories/1
@@ -72,5 +73,12 @@ class CategoriesController < ApplicationController
   # Only allow a list of trusted parameters through.
   def category_params
     params.require(:category).permit(:category)
+  end
+
+  def require_same_user
+    if current_user != @category.user
+      flash[:alert] = 'You can only edit or delete your own category'
+      redirect_to @category
+    end
   end
 end

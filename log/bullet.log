@@ -43,3 +43,33 @@ Call stack
   /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__1568589509088563372_26100'
   /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__1568589509088563372_26100'
 
+2020-10-15 11:19:06[WARN] user: visvaldas
+GET /categories
+USE eager loading detected
+  Category => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/categories/index.html.erb:18:in `block in _app_views_categories_index_html_erb__3898670356923072177_39780'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/categories/index.html.erb:14:in `_app_views_categories_index_html_erb__3898670356923072177_39780'
+
+2020-10-15 12:06:41[WARN] user: visvaldas
+GET /categories
+AVOID eager loading detected
+  Category => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-15 12:07:13[WARN] user: visvaldas
+GET /categories
+AVOID eager loading detected
+  Category => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-15 12:08:03[WARN] user: visvaldas
+GET /categories
+AVOID eager loading detected
+  Category => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
