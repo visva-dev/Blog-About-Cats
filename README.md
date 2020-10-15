@@ -1,6 +1,18 @@
 # Microverse Capstone Project - Blog app
 Microverse Ruby on Rails capstone project. This project is a blogging app, where users can register, start writing their own articles, read articles written by others, and give likes to those articles.
 
+## Project features
+
+- Users can create accounts and login.
+- When loged in, users can create articles, update or delete them.
+- When loged in users can like articles.
+- Featured article is showed at the top which is the most liked article.
+- Two bottom featured images are picked last ones from two different categories.
+- Data when an article created on who created it is showed on the article on the main page.
+- When user clicks on specific category it sorts articles just by that category
+- In categories right side field users can see how many articles each category has.
+
+
 ![screenshot](./app/assets/images/image1.png)<br>
 ![screenshot](./app/assets/images/image2.png)<br>
 
@@ -8,11 +20,11 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 - Ruby 2.7.0
 - Ruby on Rails 6.0.3.4
 
-## Demo Video
+## Video presentation of the project
 
-Click the following [link](https://www.loom.com/share/a6f4c7ca3b2a4acea1261b766476a7c9) to see Video presentation of the project.
+Click the following [Video presentation link](https://www.loom.com/share/a6f4c7ca3b2a4acea1261b766476a7c9) to see Video presentation of the project.
 
-## Live Link
+## Live Demo
 
 Click the following [link](https://blogaboutcats.herokuapp.com/) live version of the site.
 To check website functionality you can use TestUser which is already created:
@@ -43,16 +55,26 @@ After cloning the project, you should move into the directory where the project 
     rails db:migrate
 ```
 
-6. Step 6 (Sometimes doesn't need to run this, but if it asking in the terminal, then run it)
+6. Step 6 If you want to have demo content and test user already created, run this:
 
 ```bash
-    yarn install --check files 
+    rails db:seed 
 ```
 
 7. Step 7
 
 ```bash
     Rails s
+```
+
+Sometimes you can be asked to check files with yarn, so run this command:
+
+```bash
+    yarn install --check files 
+```
+#### To run the tests, run:
+```bash
+    bundle exec rspec
 ```
 
 ## Authors
