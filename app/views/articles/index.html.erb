@@ -9,7 +9,7 @@
             <h3><%= link_to article.title, article_path(article.id) %></h3>
           </div>
           <div class="card-body">
-            <h4><%= truncate(article.content, length: 350) %></h4>
+            <h4><%= truncate(article.content, length: 250) %></h4>
             <%= link_to "Read more", article_path(article.id), class: 'btn btn-primary' %>
             <h6><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name %> </h6>
             <div class="list-group">

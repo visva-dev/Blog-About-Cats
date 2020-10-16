@@ -6,7 +6,7 @@
       <h5 class="card-title font-weight-bold text-warning"><%= vote.article.title %></h5>
       <p class="card-text text-light bg-dark"><%= truncate(vote.article.content, length: 250) %></p>
       <p class="lead mb-0">
-        <%= link_to 'Read more', article_path(vote.article), class: 'text-dark' %>
+        <%= link_to 'Read more', article_path(vote.article), class: 'btn btn-success' %>
       </p>
     </div>
   <% end %>
