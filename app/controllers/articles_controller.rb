@@ -1,30 +1,28 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_article, only: %i[show edit update destroy]
   before_action :authenticate_user!, except: %i[index show]
-  before_action :require_same_user, only: [:edit, :update, :destroy]
+  before_action :require_same_user, only: %i[edit update destroy]
 
   def index
     @categories = Category.all
     cate = params[:cate]
     @articles = if !cate.nil?
                   Article.where(category_id: cate).includes([:user]).order(created_at: :desc)
-                    .paginate(page: params[:page], per_page: 3)
+                         .paginate(page: params[:page], per_page: 3)
                 else
                   @articles = Article.order(created_at: :desc)
-                    .includes([:user]).paginate(page: params[:page], per_page: 3)
+                                     .includes([:user]).paginate(page: params[:page], per_page: 3)
                 end
   end
 
-  def show
-  end
+  def show; end
 
   def new
-    @article = Article.new
+    @article = current_user.articles.build
   end
 
   def create
-    @article = current_user.articles.new(article_params)
-
+    @article = current_user.articles.build(article_params)
     if @article.save
       redirect_to @article
     else
@@ -32,20 +30,17 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
-
     if @article.update(article_params)
-      redirect_to @article
+      redirect_to articles_path
     else
       render :edit
     end
   end
 
   def destroy
-
     @article.destroy
     redirect_to action: :index
   end

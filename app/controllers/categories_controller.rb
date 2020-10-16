@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: %i[show update destroy edit]
   before_action :authenticate_user!, except: %i[index show]
-  before_action :require_same_user, only: [:edit, :update, :destroy]
+  before_action :require_same_user, only: %i[edit update destroy]
 
   # GET /categories
   # GET /categories.json
@@ -15,7 +15,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories/new
   def new
-    @category = Category.new
+    @category = current_user.categories.build
   end
 
   # GET /categories/1/edit
@@ -24,16 +24,11 @@ class CategoriesController < ApplicationController
   # POST /categories
   # POST /categories.json
   def create
-    @category = Category.new(category_params)
-
-    respond_to do |format|
-      if @category.save
-        format.html { redirect_to @category, notice: 'Category was successfully created.' }
-        format.json { render :show, status: :created, location: @category }
-      else
-        format.html { render :new }
-        format.json { render json: @category.errors, status: :unprocessable_entity }
-      end
+    @category = current_user.categories.build(category_params)
+    if @category.save
+      redirect_to categories_path
+    else
+      render :new
     end
   end
 
