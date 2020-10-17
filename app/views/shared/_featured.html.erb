@@ -1,9 +1,9 @@
-<div class="card bg-dark mt-2">
+<div class="card bg-dark mt-2 header">
   <% popular = Like.popular %>
   <% popular.each do |vote| %>
-    <%= image_tag vote.article.image, class: "card-img ", :size => '100%xauto' %>
+    <%= image_tag vote.article.image, class: "card-img " %>
     <div class="card-img-overlay font-weight-bold">
-      <h5 class="card-title font-weight-bold text-warning"><%= vote.article.title %></h5>
+      <h5 class="card-title font-weight-bold bg-info text-white d-table"><%= vote.article.title %></h5>
       <p class="card-text text-light bg-dark"><%= truncate(vote.article.content, length: 250) %></p>
       <p class="lead mb-0">
         <%= link_to 'Read more', article_path(vote.article), class: 'btn btn-success' %>
@@ -12,15 +12,15 @@
   <% end %>
 </div>
 <div class="card-group">
-  <% @categories.limit(3).each do |category| %>
+  <% Category.limit(3).each do |category|%>
     <div class="card">
       <%= image_tag category.articles.last.image, class: "card-img-top" unless category.articles.last.nil? %>
-      <div class="card-body">
-        <h5 class="card-title"><%= category.articles.last.title unless category.articles.last.nil? %></h5>
-        <p class="card-text"><%= truncate(category.articles.last.content, length: 100) unless category.articles.last.nil? %></p>
-        <p class="card-text"><small class="text-muted"><%= category.articles.last.created_at.strftime("%Y/%m/%d") unless category.articles.last.nil?%></small></p>
-        <p><small class="text-muted">by <%= category.articles.last.user.name unless category.articles.last.nil? %></small></p>
-        <p> <strong class="d-inline-block mb-2 text-success"><%= category.category %></strong></p>
+      <div class="card-img-overlay font-weight-bold">
+        <h5 class="card-title bg-info text-light d-table"><%= category.articles.last.title unless category.articles.last.nil? %></h5>
+        <p class="card-text bg-dark text-light"><%= truncate(category.articles.last.content, length: 100) unless category.articles.last.nil? %></p>
+        <p class="card-text"><small class="bg-secondary text-white"><%= category.articles.last.created_at.strftime("%Y/%m/%d") unless category.articles.last.nil?%></small></p>
+        <p><small class="text-muted bg-white">by <%= category.articles.last.user.name unless category.articles.last.nil? %></small></p>
+        <p> <strong class="d-inline-block mb-2 bg-warning text-dark"><%= category.category %></strong></p>
         <%= link_to 'Read more', article_path(category.articles.last), class: 'btn btn-primary' unless category.articles.last.nil? %>
       </div>
     </div>

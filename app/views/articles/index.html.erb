@@ -1,7 +1,6 @@
 <div class="container">
-  <%= render 'shared/featured'%>
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <% @articles.each do |article| %>
         <div class="card mt-3">
           <%= image_tag article.image %>
