@@ -1,7 +1,7 @@
-<div class="card bg-dark mt-2 header">
+<div class="card bg-dark mt-2">
   <% popular = Like.popular %>
   <% popular.each do |vote| %>
-    <%= image_tag vote.article.image, class: "card-img " %>
+    <%= image_tag vote.article.image, class: "card-img" %>
     <div class="card-img-overlay font-weight-bold">
       <h5 class="card-title font-weight-bold bg-info text-white d-table"><%= vote.article.title %></h5>
       <p class="card-text text-light bg-dark"><%= truncate(vote.article.content, length: 250) %></p>
