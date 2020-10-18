@@ -69,9 +69,9 @@ class CategoriesController < ApplicationController
   end
 
   def require_same_user
-    if current_user != @category.user
-      flash[:alert] = 'You can only edit or delete your own category'
-      redirect_to @category
-    end
+    return unless current_user != @category.user
+
+    flash[:alert] = 'You can only edit or delete your own category'
+    redirect_to @category
   end
 end
