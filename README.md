@@ -14,7 +14,7 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 
 ## Video presentation of the project
 
-https://www.loom.com/share/1244a0864e9c463ab437d0afec77096a
+https://www.loom.com/share/1244a0864e9c463ab437d0afec77096a 
 
 ## Live Demo Website
 
