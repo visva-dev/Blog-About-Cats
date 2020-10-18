@@ -12,9 +12,17 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 - When user clicks on specific category it sorts articles just by that category
 - In categories right side field users can see how many articles each category has.
 
+## Live Demo Website
 
-![screenshot](./app/assets/images/image1.png)<br>
-![screenshot](./app/assets/images/image2.png)<br>
+Click the following https://blogaboutcats.herokuapp.com/ to see live version of the site.
+To check website functionality you can use TestUser which is already created:
+`email: test2@test.com`
+`password: asdfasdf`
+
+
+![screenshot](./app/assets/images/image3.png)<br>
+![screenshot](./app/assets/images/image4.png)<br>
+![screenshot](./app/assets/images/image5.png)<br>
 
 ## Built With
 - Ruby 2.7.0
@@ -23,13 +31,6 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 ## Video presentation of the project
 
 Click the following [Video presentation link](https://www.loom.com/share/a6f4c7ca3b2a4acea1261b766476a7c9) to see Video presentation of the project.
-
-## Live Demo
-
-Click the following [link](https://blogaboutcats.herokuapp.com/) to see live version of the site.
-To check website functionality you can use TestUser which is already created:
-`email: test2@test.com`
-`password: asdfasdf`
 
 #### To get this project on your local machine, follow these steps:
 1. To get this project up and running locally, you should have [Ruby](https://www.ruby-lang.org/en/) installed on your computer.
