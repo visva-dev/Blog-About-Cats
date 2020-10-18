@@ -18,7 +18,7 @@ https://www.loom.com/share/1244a0864e9c463ab437d0afec77096a
 
 ## Live Demo Website
 
-Click the following https://blogaboutcats.herokuapp.com/ to see live version of the site.
+Click the following https://blogaboutcats2.herokuapp.com/ to see live version of the site.
 To check website functionality you can use TestUser which is already created:
 `email: test2@test.com`
 `password: asdfasdf`
