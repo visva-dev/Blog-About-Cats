@@ -464,3 +464,10 @@ Call stack
   /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:3:in `_app_views_articles__all_articles_html_erb___2955481875291242831_27220'
   /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb___4282212290617532116_27200'
 
+2020-10-19 18:35:19[WARN] user: visvaldas
+GET /articles?cate=2
+AVOID eager loading detected
+  Article => [:category]
+  Remove from your query: .includes([:category])
+Call stack
+
