@@ -3,13 +3,13 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 
 ## Project features
 
-- Users can create accounts and login.
-- When loged in, users can create articles, update or delete them.
-- When loged in users can like articles.
+- Users can create accounts and log in.
+- When logged in, users can create articles, update or delete them.
+- When logged in users can like articles.
 - Featured article is showed at the top which is the most liked article.
-- Two bottom featured images are picked last ones from two different categories.
-- Data when article is created and who created it is showed on the article on the main page.
-- When user clicks on specific category it sorts articles just by that category
+- Two bottoms featured images are picked last ones from two different categories.
+- Data when an article is created and who created it is showed on the article on the main page.
+- When a user clicks on the specific category it sorts articles just by that category
 - In categories right side field users can see how many articles each category has.
 
 ## Video presentation of the project
@@ -18,7 +18,7 @@ https://www.loom.com/share/1244a0864e9c463ab437d0afec77096a
 
 ## Live Demo Website
 
-Click the following https://blogaboutcats2.herokuapp.com/ to see live version of the site.
+Click the following https://blogaboutcats2.herokuapp.com/ to see a live version of the site.
 To check website functionality you can use TestUser which is already created:
 `email: test2@test.com`
 `password: asdfasdf`
@@ -36,9 +36,9 @@ To check website functionality you can use TestUser which is already created:
 1. To get this project up and running locally, you should have [Ruby](https://www.ruby-lang.org/en/) installed on your computer.
 
 2. Run this command `git clone https://github.com/visva-dev/Students-Blog.git` in the desired folder to clone the repository on to your local machine.
-After cloning the project, you should move into the directory where the project is stored, example `cd Students-Blog`.
+After cloning the project, you should move into the directory where the project is stored, for example `cd Students-Blog`.
 
-3. Then run to following command install the necessary dependencies
+3. Then run the following command install the necessary dependencies
 
 ```bash
     bundle install
@@ -89,7 +89,7 @@ Sometimes you can be asked to check files with yarn, so run this command:
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give an ⭐️ if you like this project!
 
 ## Acknowledgments
 
