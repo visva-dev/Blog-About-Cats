@@ -2,6 +2,8 @@
   <div class="card mt-5">
     <div class="card-body">
       <%= form_for @article do |f| %>
+        <%= form_errors_for @article %>
+        <%= yield :form_errors %>
         <div class="form-group">
           <%= f.label :title %>
           <%= f.text_field :title, class: "form-control" %>
@@ -10,8 +12,8 @@
           <%= f.label :content %>
           <%= f.text_area :content, class: "form-control" %>
           <div class="form-group mt-2">
-          <%= f.label :image %>
-          <%= f.text_field :image, class: "form-control" %>
+            <%= f.label :image %>
+            <%= f.text_field :image, class: "form-control" %>
           </div>
           <div class="form-group mt-2">
             <%= f.select :category_id, Category.all.map {|c| [c.category, c.id]} %>

@@ -7,4 +7,8 @@ module ApplicationHelper
       link_to('Like!', article_likes_path(article_id: article.id), method: :post)
     end
   end
+
+  def form_errors_for(object = nil)
+    render('shared/form_errors', object: object) unless object.blank?
+  end
 end
