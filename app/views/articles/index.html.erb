@@ -6,7 +6,7 @@
           <strong class="d-inline-block mb-2 text-success"><%= article.category.category %></strong>
           <h3 class="mb-0"><%= article.title %></h3>
           <div class="mb-1 text-muted"><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name %></div>
-          <p class="card-text mb-auto"><%= truncate(article.content, length: 200) %></p>
+          <p class="card-text"><%= truncate(article.content, length: 150) %></p>
           <div class="btn-group">
             <%= link_to "Continue reading", article_path(article.id), class: 'stretched-link' %>
           </div>
