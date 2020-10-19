@@ -73,3 +73,24 @@ AVOID eager loading detected
   Remove from your query: .includes([:user])
 Call stack
 
+2020-10-19 11:42:38[WARN] user: visvaldas
+GET /articles
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-19 11:42:44[WARN] user: visvaldas
+GET /articles?cate=2
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-19 11:42:47[WARN] user: visvaldas
+GET /articles?cate=4
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+

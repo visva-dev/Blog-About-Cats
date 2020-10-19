@@ -1,36 +1,5 @@
-<%= render 'shared/featured'%>
 <div class="album py-5">
-  <div class="container">
-    <div class="row">
-      <% @articles.each do |article| %>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <%= image_tag article.image %>
-            <div class="card-body">
-              <h5 class="card-title font-weight-bold"><%= link_to article.title, article_path(article.id) %></h5>
-              <p class="card-text"><%= truncate(article.content, length: 200) %></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <%= link_to "Read more", article_path(article.id), class: 'btn btn-sm btn-outline-secondary' %>
-                </div>
-                <small class="text-muted"><%= article.created_at.strftime("%Y/%m/%d") %> by <%= article.user.name %></small>
-              </div>
-              <div class="list-group mt-2">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  <div class="btn btn-outline-success">
-                    <%= like_or_dislike_btn(article) %>
-                  </div>
-                  <span class="badge badge-primary badge-pill">
-                    <%= article.likes.count %> likes!
-                  </span>
-                </li>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
+  <%= render 'articles/all_articles'%>
   <div class="digg_pagination text-center">
     <div class="page_info">
       <%= page_entries_info @articles %>
