@@ -471,3 +471,10 @@ AVOID eager loading detected
   Remove from your query: .includes([:category])
 Call stack
 
+2020-10-20 09:51:06[WARN] user: visvaldas
+GET /articles?cate=1
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+

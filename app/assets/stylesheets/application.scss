@@ -1,4 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap';
+@import url('//fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -25,17 +30,48 @@
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #4e443e;
   border-top: 0.05rem solid #e5e5e5;
+}
+
+.blog-footer a {
+  color: #ff4500;
 }
 
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
 
-.card-img {
+.bigimg {
   height: 60vh;
-  background-position: center center;
   background-repeat: no-repeat no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+}
+
+.orange-text {
+  color: #ff4500;
+  font-size: 2em;
+}
+
+.orange-text2 {
+  color: #ff4500;
+  font-size: 1.2em;
+}
+
+.navbar-nav:first-child {
+  color: #ff4500;
+}
+
+.custom-title {
+  font-size: 2em;
+}
+
+.custom-title::after {
+  display: block;
+  content: '';
+  background: yellow;
+  height: 3px;
+  width: 100px;
+  margin-left: 5px;
 }

@@ -99,3 +99,5 @@ Give an ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
+
+Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)

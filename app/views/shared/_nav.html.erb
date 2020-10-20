@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <%= link_to "CatsBlog", root_path, class: 'navbar-brand' %>
+  <%= link_to "CaTsBlOg", root_path, class: 'navbar-brand' %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse font-weight-bold" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% Category.all.each do |category|%>
         <li class="nav-item">
-          <%= link_to category.category, articles_path(:cate => category.id), class: 'nav-link' %>
+          <%= link_to category.category.upcase, articles_path(:cate => category.id), class: 'nav-link' %>
         </li>
         <li class="nav-item mt-2">
           <%= category.articles.count %>
@@ -15,9 +15,6 @@
       <% end %>
     </ul>
     <ul class="navbar-nav mr-2">
-      <li class="nav-item">
-        <%= link_to "All Categories", categories_path, class: 'nav-link' %>
-      </li>
       <% if user_signed_in? %>
         <li class="nav-item">
           <%= link_to "Write article", new_article_path, class: 'nav-link' %>
@@ -30,10 +27,10 @@
         </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "Sign In", new_user_session_path, class: 'nav-link' %>
+          <%= link_to "LOGIN", new_user_session_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
-          <%= link_to "Sign Up", new_user_registration_path, class: 'nav-link' %>
+          <%= link_to "REGISTER", new_user_registration_path, class: 'nav-link' %>
         </li>
       <% end %>
     </ul>
