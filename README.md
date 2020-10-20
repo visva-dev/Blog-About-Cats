@@ -24,9 +24,9 @@ To check website functionality you can use TestUser which is already created:
 `password: asdfasdf`
 
 
-![screenshot](./app/assets/images/image3.png)<br>
-![screenshot](./app/assets/images/image4.png)<br>
-![screenshot](./app/assets/images/image5.png)<br>
+![screenshot](./app/assets/images/image6.png)<br>
+![screenshot](./app/assets/images/image7.png)<br>
+![screenshot](./app/assets/images/image8.png)<br>
 
 ## Built With
 - Ruby 2.7.0

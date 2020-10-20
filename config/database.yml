@@ -8,15 +8,11 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: postgres
-  password: postgres
 
 development:
   <<: *default
   adapter: postgresql
   database: capstone_development
-  username: postgres
-  password: postgres
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -29,5 +25,3 @@ test:
 production:
   <<: *default
   database: <%= ENV['DATABASE_URL'] %>
-  username: postgres
-  password: postgres
