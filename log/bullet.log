@@ -1,0 +1,480 @@
+2020-10-12 18:15:27[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__987566839655846178_35500'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__987566839655846178_35500'
+
+2020-10-12 18:43:17[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__2771256657976267877_46240'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__2771256657976267877_46240'
+
+2020-10-14 15:26:45[WARN] user: visvaldas
+GET /
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__1568589509088563372_26100'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__1568589509088563372_26100'
+
+2020-10-14 15:27:11[WARN] user: visvaldas
+GET /
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__1568589509088563372_26100'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__1568589509088563372_26100'
+
+2020-10-14 15:27:17[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:14:in `block in _app_views_articles_index_html_erb__1568589509088563372_26100'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/articles/index.html.erb:5:in `_app_views_articles_index_html_erb__1568589509088563372_26100'
+
+2020-10-15 11:19:06[WARN] user: visvaldas
+GET /categories
+USE eager loading detected
+  Category => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/categories/index.html.erb:18:in `block in _app_views_categories_index_html_erb__3898670356923072177_39780'
+  /home/visvaldas/Desktop/Microverse/Students-Blog/app/views/categories/index.html.erb:14:in `_app_views_categories_index_html_erb__3898670356923072177_39780'
+
+2020-10-15 12:06:41[WARN] user: visvaldas
+GET /categories
+AVOID eager loading detected
+  Category => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-15 12:07:13[WARN] user: visvaldas
+GET /categories
+AVOID eager loading detected
+  Category => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-15 12:08:03[WARN] user: visvaldas
+GET /categories
+AVOID eager loading detected
+  Category => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-19 11:42:38[WARN] user: visvaldas
+GET /articles
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-19 11:42:44[WARN] user: visvaldas
+GET /articles?cate=2
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-19 11:42:47[WARN] user: visvaldas
+GET /articles?cate=4
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+
+2020-10-19 16:01:13[WARN] user: visvaldas
+GET /articles?cate=4
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_35460'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_35460'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_35440'
+
+2020-10-19 16:01:45[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_35620'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_35620'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_35600'
+
+2020-10-19 16:03:04[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:37:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_35800'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_35800'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_35780'
+
+2020-10-19 16:06:09[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:35:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_37180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_37180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_37160'
+
+2020-10-19 16:06:43[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_37380'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_37380'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_37360'
+
+2020-10-19 16:07:06[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_37560'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_37560'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_37540'
+
+2020-10-19 16:07:14[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_37720'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_37720'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_37700'
+
+2020-10-19 16:08:28[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_38500'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_38500'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_38480'
+
+2020-10-19 16:09:16[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_38700'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_38700'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_38680'
+
+2020-10-19 16:12:41[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_41180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_41180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_41160'
+
+2020-10-19 16:12:58[WARN] user: visvaldas
+GET /articles?cate=2
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_41180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_41180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_41160'
+
+2020-10-19 16:13:07[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_41180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_41180'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_41160'
+
+2020-10-19 16:15:50[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_41740'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_41740'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_41720'
+
+2020-10-19 16:16:06[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_41900'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_41900'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_41880'
+
+2020-10-19 16:19:15[WARN] user: visvaldas
+GET /articles?cate=2
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_41900'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_41900'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_41880'
+
+2020-10-19 16:19:27[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_41900'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_41900'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_41880'
+
+2020-10-19 16:20:00[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_42220'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_42220'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_42200'
+
+2020-10-19 16:21:43[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_42420'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_42420'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_42400'
+
+2020-10-19 16:23:05[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_42620'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_42620'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_42600'
+
+2020-10-19 16:24:19[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_42820'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_42820'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_42800'
+
+2020-10-19 16:24:49[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43000'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43000'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_42980'
+
+2020-10-19 16:25:04[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43160'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43160'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43140'
+
+2020-10-19 16:25:45[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43360'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43360'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43340'
+
+2020-10-19 16:27:04[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43560'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43560'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43540'
+
+2020-10-19 16:28:00[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:29:59[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:30:36[WARN] user: visvaldas
+GET /articles?cate=1&page=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:30:59[WARN] user: visvaldas
+GET /articles?cate=2
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:31:02[WARN] user: visvaldas
+GET /articles?cate=4
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:31:12[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:32:53[WARN] user: visvaldas
+GET /articles
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:33:56[WARN] user: visvaldas
+GET /articles
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:34:26[WARN] user: visvaldas
+GET /articles?cate=4
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:36:22[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:36:29[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__3079616382514459656_43760'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__2385036945011158035_43740'
+
+2020-10-19 16:37:08[WARN] user: visvaldas
+GET /articles?cate=3
+USE eager loading detected
+  Article => [:category]
+  Add to your query: .includes([:category])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:36:in `block in _app_views_articles__all_articles_html_erb__228462918732827933_26560'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:33:in `_app_views_articles__all_articles_html_erb__228462918732827933_26560'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb__919712324073748047_26540'
+
+2020-10-19 16:38:29[WARN] user: visvaldas
+GET /articles?cate=1
+USE eager loading detected
+  Article => [:user]
+  Add to your query: .includes([:user])
+Call stack
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:14:in `block in _app_views_articles__all_articles_html_erb___2955481875291242831_27220'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/_all_articles.html.erb:3:in `_app_views_articles__all_articles_html_erb___2955481875291242831_27220'
+  /home/visvaldas/Desktop/Microverse/Blog-About-Cats/app/views/articles/index.html.erb:2:in `_app_views_articles_index_html_erb___4282212290617532116_27200'
+
+2020-10-19 18:35:19[WARN] user: visvaldas
+GET /articles?cate=2
+AVOID eager loading detected
+  Article => [:category]
+  Remove from your query: .includes([:category])
+Call stack
+
+2020-10-20 09:51:06[WARN] user: visvaldas
+GET /articles?cate=1
+AVOID eager loading detected
+  Article => [:user]
+  Remove from your query: .includes([:user])
+Call stack
+

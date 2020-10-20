@@ -1,0 +1,21 @@
+<div class="card">
+  <% popular = Like.popular %>
+  <% popular.each do |vote| %>
+    <%= image_tag vote.article.image, class: "card-img-top bigimg" %>
+    <div class="card-img-overlay font-weight-bold">
+      <h5 class="card-title font-weight-bold bg-dark orange-text d-table"><%= vote.article.title %></h5>
+      <p class="card-text bg-dark text-light font-weight-bold"><%= truncate(vote.article.content, length: 250) %></p>
+    </div>
+  <% end %>
+</div>
+<div class="card-group">
+  <% Category.all.each do |category|%>
+    <div class="card">
+      <%= image_tag category.articles.last.image, class: "card-img-top bigimg" unless category.articles.last.nil? %>
+      <div class="card-img-overlay font-weight-bold">
+        <p> <strong class="d-inline-block"><%= link_to category.category, articles_path(:cate => category.id), class: "text-light text-decoration-none custom-title" %></strong></p>
+        <h5 class="card-title bg-dark text-light d-table font-weight-bold"><%= category.articles.last.title unless category.articles.last.nil? %></h5>
+      </div>
+    </div>
+  <% end %>
+</div>

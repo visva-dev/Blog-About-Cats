@@ -1,0 +1,77 @@
+@import 'bootstrap/dist/css/bootstrap';
+@import url('//fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require bootstrap
+ *= require_tree .
+ *= require_self
+ */
+/* stylelint-disable selector-list-comma-newline-after */
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #4e443e;
+  border-top: 0.05rem solid #e5e5e5;
+}
+
+.blog-footer a {
+  color: #ff4500;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.bigimg {
+  height: 60vh;
+  background-repeat: no-repeat no-repeat;
+  object-fit: cover;
+  object-position: center;
+}
+
+.orange-text {
+  color: #ff4500;
+  font-size: 2em;
+}
+
+.orange-text2 {
+  color: #ff4500;
+  font-size: 1.2em;
+}
+
+.navbar-nav:first-child {
+  color: #ff4500;
+}
+
+.custom-title {
+  font-size: 2em;
+}
+
+.custom-title::after {
+  display: block;
+  content: '';
+  background: yellow;
+  height: 3px;
+  width: 100px;
+  margin-left: 5px;
+}
